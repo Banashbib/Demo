@@ -1,24 +1,25 @@
 //
 //  ContentView.swift
-//  Demo
+//  secondtry
 //
-//  Created by Bana Alshabib on 23/03/1445 AH.
+//  Created by Leen Almejarri on 23/03/1445 AH.
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ZStack{
+                Circle()
+                    .fill(Color.brown)
+                    .frame(width: 350, height: 350)
+                Image("Image 1").resizable().cornerRadius(400).frame(width: 330, height: 330)
+                
+            }
+            Text("Leen almejarri").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundStyle(Color.brown)
+            Text("i hope you all have a nice day!")
         }
-        .padding()
-    }
-}
-
-#Preview {
-    ContentView()
-}
+    }}
